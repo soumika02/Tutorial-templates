@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <video autoplay muted loop id="myvideo">
+      <source src="Kabira Mast Maula Mast Kalandar 4K FullScreen-(MirchiStatus.com).mp4">
+ </video> 
+ <div class="content">
+<h1>background video</h1>
+<button id="mybtn" onclick="myFunction()">pause</button>
+ </div>
+ <script>
+     var video=document.getElementById("myvideo");
+     var btn=document.getElementById("mybtn");
+     function myfunction(){
+         if(video.paused){
+             video.play();
+             btn.innerHTML="pause";
+            }else{
+                video.pause();
+                btn.innerHTML="play";
+            }
+     }
+ </script>
+</body>
+</html>

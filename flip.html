@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>move your mouse over the image to see the result</p>
+    <a href="#" onmouseover="document.myImage.src=image2.src;" onmouseout="document.myImage.src=image1.src;">
+        <img name="myImage" src="../javascript/mouse.jpg" height="150px" width="200px"/>
+    </a>
+   <script>
+       if(document.images){
+           var image1=new Image();
+           image1.src="../javascript/mouse.jpg";
+           var image2=new Image();
+           image2.src="../javascript/10.jpg";
+       }
+   </script> 
+</body>
+<script src="inde.js"></script>
+
+</html>

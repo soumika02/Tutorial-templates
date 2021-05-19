@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <img id ="myimg" src ="mouse.jpg" height="150px" width="200px"/>
+        <center>
+            <p>click the  below button to move the image right</p>
+            <input type="button" value="click Me" onclick= "moveRight();"/>
+        </center>
+        </form>
+        <script type="text/javascript">
+        var img=null;
+        function init(){
+            img=document.getElementById('myimg');
+            img.style.position='relative';
+            img.style.left='50px';
+        }
+        function moveRight(){
+            img.style.left=parseInt(img.style.left)+100+'px';
+        }
+        window.onload=init;
+        </script>
+</body>
+<script src="inde.js"></script>
+</html>

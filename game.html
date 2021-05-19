@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>document</title>
+    </head>
+    <body>
+        
+        <div style="height:300px;width:300px;display:flex;">
+        <div>
+        <div style="height:100px;width:100px;background-color: blue;visibility:visible;"id="one" onclick="get()">
+        </div>
+        <div style="height:100px;width:100px;background-color:lightcoral; visibility: visible;"id="two" onclick="get1()">
+        </div>
+        <div style="height:100px;width:100px;background-color: lightgreen;visibility: visible;"id="three" onclick="get2()">
+        </div>
+        </div>
+        <div>
+        <div style="height:100px;width:100px;background-color:deeppink;visibility: visible;"id="four" onclick="get3()">
+        </div>
+        <div style="height:100px;width:100px;background-color:lightseagreen;visibility: visible;"id="five" onclick="get4()">
+        </div>
+       <div style="height:100px;width:100px;background-color:burlywood;visibility: visible;"id="six" onclick="get5()">
+    </div>
+       </div>
+        <div>
+        <div style="height:100px;width:100px;background-color:blueviolet;visibility: visible;"id="seven" onclick="get6()">
+        </div>
+         <div style="height:100px;width:100px;background-color:green;visibility: visible;"id="eight" onclick="get7()">
+        </div>
+        <div style="height:100px;width:100px;background-color:magenta;visibility: visible;"id="nine" onclick="get8()">
+        </div>
+         </div>
+        </div>
+        <div>
+            <h1 id="ran">Here is the random names</h1>
+        </div>
+        <div>
+            <button id="btn" onclick="hash()">get the random names</button>
+        </div>
+        <div>
+            <form name="myform" method="post" action="welcome.html" onsubmit="return validateform()" action="message.html" style= "text-align:center;margin-top:50px;border: 1px solid;width:200px;margin-left: 500px;background-color:rgb(179, 221, 192);">              <h2>Welcome</h2>
+                Name: <input type="text" name="name" placeholder="Name"><br/>  <br>
+                password: <input type="password" name="password" placeholder="password"><br/>  <br>
+                 <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div>
+            <button id="add"onclick="add()" style="visibility:visible; margin-top:50px;">Add</button><br>
+            <button onclick="odd()"style="visibility:hidden;">-</button>
+            <button onclick="odd()"style="visibility:hidden;">0</button>
+            <button onclick="sub()" style="visibility:hidden;">+</button>
+        </div>
+        <div>
+        <form name="form" action="">
+            Enter password:<br>
+            <input type="password" name="pswd1"><br>
+            confirm password:<br>
+            <input type="password" name="pswd2"><br>
+            <button onclick="mathpassword()">submit</button>
+        </form>
+        <script>
+            function mathpassword(){
+                var pw1 =document.form.pswd1.value;
+                var pw2 =document.form.pswd2.value;
+                if(pw1!=pw2)
+                alert("password did not match");
+                else
+                alert("password verified successfull");
+     
+            }
+        </script>
+        </div>
+        <div>
+            <h2>My first javascipt</h2>
+            <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+                Click me to display Date and Time.</button>
+             <p id="demo"></p>
+
+        </div>
+    </body>
+    <script src="game.js"></script>
+</html>
